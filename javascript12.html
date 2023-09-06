@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+        }
+        .ball{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            background-color: blueviolet;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ball">
+
+    </div>
+
+
+    <script>
+        // function sendData(){
+        //     console.log('data sent')
+        // }
+        // var sendBTN = document.getElementById('send');
+        // // sendBTN.setAttribute('onclick','sendData()')
+
+        // sendBTN.addEventListener('click',(event)=>{
+        //     console.log('send')
+        // });
+        
+        // document.addEventListener('keypress',(event)=>{
+        //     console.log(event.keyCode)
+        //     console.log(event)
+        //     console.log(event.key)
+        // })
+
+        // document.addEventListener('mousemove',(event)=>{
+        //     console.log(event)
+        // })
+        var _top = 0;
+        var left = 0;
+        var speed = 10;
+        var ball = document.querySelector('.ball');
+        document.addEventListener('keydown',(event)=>{
+            /*
+                w:87
+                a:65
+                s:83
+                d:68
+            */
+            console.log(event.keyCode)
+            if(event.keyCode == 87)
+            {
+                _top = ( _top - speed)
+                console.log(_top)
+                ball.style.top = _top+'px'
+            }
+            if(event.keyCode == 83)
+            {
+                _top = ( _top + speed)
+                ball.style.top = _top+'px'
+            }
+            if(event.keyCode == 65)
+            {
+                left = ( left - speed)
+                ball.style.left = left+'px'
+            }
+            if(event.keyCode == 68)
+            {
+                left = ( left + speed)
+                ball.style.left = left+'px'
+            }
+        })
+
+    </script>
+</body>
+</html>

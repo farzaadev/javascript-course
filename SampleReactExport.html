@@ -1,0 +1,958 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <style type="text/css">:root, :host {
+         --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+         --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+         --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+         --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+         --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+         --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+         --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+         --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+         --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+         }
+         svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+         overflow: visible;
+         box-sizing: content-box;
+         }
+         .svg-inline--fa {
+         display: var(--fa-display, inline-block);
+         height: 1em;
+         overflow: visible;
+         vertical-align: -0.125em;
+         }
+         .svg-inline--fa.fa-2xs {
+         vertical-align: 0.1em;
+         }
+         .svg-inline--fa.fa-xs {
+         vertical-align: 0em;
+         }
+         .svg-inline--fa.fa-sm {
+         vertical-align: -0.0714285705em;
+         }
+         .svg-inline--fa.fa-lg {
+         vertical-align: -0.2em;
+         }
+         .svg-inline--fa.fa-xl {
+         vertical-align: -0.25em;
+         }
+         .svg-inline--fa.fa-2xl {
+         vertical-align: -0.3125em;
+         }
+         .svg-inline--fa.fa-pull-left {
+         margin-right: var(--fa-pull-margin, 0.3em);
+         width: auto;
+         }
+         .svg-inline--fa.fa-pull-right {
+         margin-left: var(--fa-pull-margin, 0.3em);
+         width: auto;
+         }
+         .svg-inline--fa.fa-li {
+         width: var(--fa-li-width, 2em);
+         top: 0.25em;
+         }
+         .svg-inline--fa.fa-fw {
+         width: var(--fa-fw-width, 1.25em);
+         }
+         .fa-layers svg.svg-inline--fa {
+         bottom: 0;
+         left: 0;
+         margin: auto;
+         position: absolute;
+         right: 0;
+         top: 0;
+         }
+         .fa-layers-counter, .fa-layers-text {
+         display: inline-block;
+         position: absolute;
+         text-align: center;
+         }
+         .fa-layers {
+         display: inline-block;
+         height: 1em;
+         position: relative;
+         text-align: center;
+         vertical-align: -0.125em;
+         width: 1em;
+         }
+         .fa-layers svg.svg-inline--fa {
+         -webkit-transform-origin: center center;
+         transform-origin: center center;
+         }
+         .fa-layers-text {
+         left: 50%;
+         top: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         -webkit-transform-origin: center center;
+         transform-origin: center center;
+         }
+         .fa-layers-counter {
+         background-color: var(--fa-counter-background-color, #ff253a);
+         border-radius: var(--fa-counter-border-radius, 1em);
+         box-sizing: border-box;
+         color: var(--fa-inverse, #fff);
+         line-height: var(--fa-counter-line-height, 1);
+         max-width: var(--fa-counter-max-width, 5em);
+         min-width: var(--fa-counter-min-width, 1.5em);
+         overflow: hidden;
+         padding: var(--fa-counter-padding, 0.25em 0.5em);
+         right: var(--fa-right, 0);
+         text-overflow: ellipsis;
+         top: var(--fa-top, 0);
+         -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+         transform: scale(var(--fa-counter-scale, 0.25));
+         -webkit-transform-origin: top right;
+         transform-origin: top right;
+         }
+         .fa-layers-bottom-right {
+         bottom: var(--fa-bottom, 0);
+         right: var(--fa-right, 0);
+         top: auto;
+         -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+         transform: scale(var(--fa-layers-scale, 0.25));
+         -webkit-transform-origin: bottom right;
+         transform-origin: bottom right;
+         }
+         .fa-layers-bottom-left {
+         bottom: var(--fa-bottom, 0);
+         left: var(--fa-left, 0);
+         right: auto;
+         top: auto;
+         -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+         transform: scale(var(--fa-layers-scale, 0.25));
+         -webkit-transform-origin: bottom left;
+         transform-origin: bottom left;
+         }
+         .fa-layers-top-right {
+         top: var(--fa-top, 0);
+         right: var(--fa-right, 0);
+         -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+         transform: scale(var(--fa-layers-scale, 0.25));
+         -webkit-transform-origin: top right;
+         transform-origin: top right;
+         }
+         .fa-layers-top-left {
+         left: var(--fa-left, 0);
+         right: auto;
+         top: var(--fa-top, 0);
+         -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+         transform: scale(var(--fa-layers-scale, 0.25));
+         -webkit-transform-origin: top left;
+         transform-origin: top left;
+         }
+         .fa-1x {
+         font-size: 1em;
+         }
+         .fa-2x {
+         font-size: 2em;
+         }
+         .fa-3x {
+         font-size: 3em;
+         }
+         .fa-4x {
+         font-size: 4em;
+         }
+         .fa-5x {
+         font-size: 5em;
+         }
+         .fa-6x {
+         font-size: 6em;
+         }
+         .fa-7x {
+         font-size: 7em;
+         }
+         .fa-8x {
+         font-size: 8em;
+         }
+         .fa-9x {
+         font-size: 9em;
+         }
+         .fa-10x {
+         font-size: 10em;
+         }
+         .fa-2xs {
+         font-size: 0.625em;
+         line-height: 0.1em;
+         vertical-align: 0.225em;
+         }
+         .fa-xs {
+         font-size: 0.75em;
+         line-height: 0.0833333337em;
+         vertical-align: 0.125em;
+         }
+         .fa-sm {
+         font-size: 0.875em;
+         line-height: 0.0714285718em;
+         vertical-align: 0.0535714295em;
+         }
+         .fa-lg {
+         font-size: 1.25em;
+         line-height: 0.05em;
+         vertical-align: -0.075em;
+         }
+         .fa-xl {
+         font-size: 1.5em;
+         line-height: 0.0416666682em;
+         vertical-align: -0.125em;
+         }
+         .fa-2xl {
+         font-size: 2em;
+         line-height: 0.03125em;
+         vertical-align: -0.1875em;
+         }
+         .fa-fw {
+         text-align: center;
+         width: 1.25em;
+         }
+         .fa-ul {
+         list-style-type: none;
+         margin-left: var(--fa-li-margin, 2.5em);
+         padding-left: 0;
+         }
+         .fa-ul > li {
+         position: relative;
+         }
+         .fa-li {
+         left: calc(var(--fa-li-width, 2em) * -1);
+         position: absolute;
+         text-align: center;
+         width: var(--fa-li-width, 2em);
+         line-height: inherit;
+         }
+         .fa-border {
+         border-color: var(--fa-border-color, #eee);
+         border-radius: var(--fa-border-radius, 0.1em);
+         border-style: var(--fa-border-style, solid);
+         border-width: var(--fa-border-width, 0.08em);
+         padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+         }
+         .fa-pull-left {
+         float: left;
+         margin-right: var(--fa-pull-margin, 0.3em);
+         }
+         .fa-pull-right {
+         float: right;
+         margin-left: var(--fa-pull-margin, 0.3em);
+         }
+         .fa-beat {
+         -webkit-animation-name: fa-beat;
+         animation-name: fa-beat;
+         -webkit-animation-delay: var(--fa-animation-delay, 0s);
+         animation-delay: var(--fa-animation-delay, 0s);
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 1s);
+         animation-duration: var(--fa-animation-duration, 1s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+         animation-timing-function: var(--fa-animation-timing, ease-in-out);
+         }
+         .fa-bounce {
+         -webkit-animation-name: fa-bounce;
+         animation-name: fa-bounce;
+         -webkit-animation-delay: var(--fa-animation-delay, 0s);
+         animation-delay: var(--fa-animation-delay, 0s);
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 1s);
+         animation-duration: var(--fa-animation-duration, 1s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+         animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+         }
+         .fa-fade {
+         -webkit-animation-name: fa-fade;
+         animation-name: fa-fade;
+         -webkit-animation-delay: var(--fa-animation-delay, 0s);
+         animation-delay: var(--fa-animation-delay, 0s);
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 1s);
+         animation-duration: var(--fa-animation-duration, 1s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+         animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+         }
+         .fa-beat-fade {
+         -webkit-animation-name: fa-beat-fade;
+         animation-name: fa-beat-fade;
+         -webkit-animation-delay: var(--fa-animation-delay, 0s);
+         animation-delay: var(--fa-animation-delay, 0s);
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 1s);
+         animation-duration: var(--fa-animation-duration, 1s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+         animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+         }
+         .fa-flip {
+         -webkit-animation-name: fa-flip;
+         animation-name: fa-flip;
+         -webkit-animation-delay: var(--fa-animation-delay, 0s);
+         animation-delay: var(--fa-animation-delay, 0s);
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 1s);
+         animation-duration: var(--fa-animation-duration, 1s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+         animation-timing-function: var(--fa-animation-timing, ease-in-out);
+         }
+         .fa-shake {
+         -webkit-animation-name: fa-shake;
+         animation-name: fa-shake;
+         -webkit-animation-delay: var(--fa-animation-delay, 0s);
+         animation-delay: var(--fa-animation-delay, 0s);
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 1s);
+         animation-duration: var(--fa-animation-duration, 1s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+         animation-timing-function: var(--fa-animation-timing, linear);
+         }
+         .fa-spin {
+         -webkit-animation-name: fa-spin;
+         animation-name: fa-spin;
+         -webkit-animation-delay: var(--fa-animation-delay, 0s);
+         animation-delay: var(--fa-animation-delay, 0s);
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 2s);
+         animation-duration: var(--fa-animation-duration, 2s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+         animation-timing-function: var(--fa-animation-timing, linear);
+         }
+         .fa-spin-reverse {
+         --fa-animation-direction: reverse;
+         }
+         .fa-pulse,
+         .fa-spin-pulse {
+         -webkit-animation-name: fa-spin;
+         animation-name: fa-spin;
+         -webkit-animation-direction: var(--fa-animation-direction, normal);
+         animation-direction: var(--fa-animation-direction, normal);
+         -webkit-animation-duration: var(--fa-animation-duration, 1s);
+         animation-duration: var(--fa-animation-duration, 1s);
+         -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+         -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+         animation-timing-function: var(--fa-animation-timing, steps(8));
+         }
+         @media (prefers-reduced-motion: reduce) {
+         .fa-beat,
+         .fa-bounce,
+         .fa-fade,
+         .fa-beat-fade,
+         .fa-flip,
+         .fa-pulse,
+         .fa-shake,
+         .fa-spin,
+         .fa-spin-pulse {
+         -webkit-animation-delay: -1ms;
+         animation-delay: -1ms;
+         -webkit-animation-duration: 1ms;
+         animation-duration: 1ms;
+         -webkit-animation-iteration-count: 1;
+         animation-iteration-count: 1;
+         -webkit-transition-delay: 0s;
+         transition-delay: 0s;
+         -webkit-transition-duration: 0s;
+         transition-duration: 0s;
+         }
+         }
+         @-webkit-keyframes fa-beat {
+         0%, 90% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+         }
+         45% {
+         -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+         transform: scale(var(--fa-beat-scale, 1.25));
+         }
+         }
+         @keyframes fa-beat {
+         0%, 90% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+         }
+         45% {
+         -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+         transform: scale(var(--fa-beat-scale, 1.25));
+         }
+         }
+         @-webkit-keyframes fa-bounce {
+         0% {
+         -webkit-transform: scale(1, 1) translateY(0);
+         transform: scale(1, 1) translateY(0);
+         }
+         10% {
+         -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+         transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+         }
+         30% {
+         -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+         transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+         }
+         50% {
+         -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+         transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+         }
+         57% {
+         -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+         transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+         }
+         64% {
+         -webkit-transform: scale(1, 1) translateY(0);
+         transform: scale(1, 1) translateY(0);
+         }
+         100% {
+         -webkit-transform: scale(1, 1) translateY(0);
+         transform: scale(1, 1) translateY(0);
+         }
+         }
+         @keyframes fa-bounce {
+         0% {
+         -webkit-transform: scale(1, 1) translateY(0);
+         transform: scale(1, 1) translateY(0);
+         }
+         10% {
+         -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+         transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+         }
+         30% {
+         -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+         transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+         }
+         50% {
+         -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+         transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+         }
+         57% {
+         -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+         transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+         }
+         64% {
+         -webkit-transform: scale(1, 1) translateY(0);
+         transform: scale(1, 1) translateY(0);
+         }
+         100% {
+         -webkit-transform: scale(1, 1) translateY(0);
+         transform: scale(1, 1) translateY(0);
+         }
+         }
+         @-webkit-keyframes fa-fade {
+         50% {
+         opacity: var(--fa-fade-opacity, 0.4);
+         }
+         }
+         @keyframes fa-fade {
+         50% {
+         opacity: var(--fa-fade-opacity, 0.4);
+         }
+         }
+         @-webkit-keyframes fa-beat-fade {
+         0%, 100% {
+         opacity: var(--fa-beat-fade-opacity, 0.4);
+         -webkit-transform: scale(1);
+         transform: scale(1);
+         }
+         50% {
+         opacity: 1;
+         -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+         transform: scale(var(--fa-beat-fade-scale, 1.125));
+         }
+         }
+         @keyframes fa-beat-fade {
+         0%, 100% {
+         opacity: var(--fa-beat-fade-opacity, 0.4);
+         -webkit-transform: scale(1);
+         transform: scale(1);
+         }
+         50% {
+         opacity: 1;
+         -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+         transform: scale(var(--fa-beat-fade-scale, 1.125));
+         }
+         }
+         @-webkit-keyframes fa-flip {
+         50% {
+         -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+         transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+         }
+         }
+         @keyframes fa-flip {
+         50% {
+         -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+         transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+         }
+         }
+         @-webkit-keyframes fa-shake {
+         0% {
+         -webkit-transform: rotate(-15deg);
+         transform: rotate(-15deg);
+         }
+         4% {
+         -webkit-transform: rotate(15deg);
+         transform: rotate(15deg);
+         }
+         8%, 24% {
+         -webkit-transform: rotate(-18deg);
+         transform: rotate(-18deg);
+         }
+         12%, 28% {
+         -webkit-transform: rotate(18deg);
+         transform: rotate(18deg);
+         }
+         16% {
+         -webkit-transform: rotate(-22deg);
+         transform: rotate(-22deg);
+         }
+         20% {
+         -webkit-transform: rotate(22deg);
+         transform: rotate(22deg);
+         }
+         32% {
+         -webkit-transform: rotate(-12deg);
+         transform: rotate(-12deg);
+         }
+         36% {
+         -webkit-transform: rotate(12deg);
+         transform: rotate(12deg);
+         }
+         40%, 100% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+         }
+         }
+         @keyframes fa-shake {
+         0% {
+         -webkit-transform: rotate(-15deg);
+         transform: rotate(-15deg);
+         }
+         4% {
+         -webkit-transform: rotate(15deg);
+         transform: rotate(15deg);
+         }
+         8%, 24% {
+         -webkit-transform: rotate(-18deg);
+         transform: rotate(-18deg);
+         }
+         12%, 28% {
+         -webkit-transform: rotate(18deg);
+         transform: rotate(18deg);
+         }
+         16% {
+         -webkit-transform: rotate(-22deg);
+         transform: rotate(-22deg);
+         }
+         20% {
+         -webkit-transform: rotate(22deg);
+         transform: rotate(22deg);
+         }
+         32% {
+         -webkit-transform: rotate(-12deg);
+         transform: rotate(-12deg);
+         }
+         36% {
+         -webkit-transform: rotate(12deg);
+         transform: rotate(12deg);
+         }
+         40%, 100% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+         }
+         }
+         @-webkit-keyframes fa-spin {
+         0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+         }
+         100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+         }
+         }
+         @keyframes fa-spin {
+         0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+         }
+         100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+         }
+         }
+         .fa-rotate-90 {
+         -webkit-transform: rotate(90deg);
+         transform: rotate(90deg);
+         }
+         .fa-rotate-180 {
+         -webkit-transform: rotate(180deg);
+         transform: rotate(180deg);
+         }
+         .fa-rotate-270 {
+         -webkit-transform: rotate(270deg);
+         transform: rotate(270deg);
+         }
+         .fa-flip-horizontal {
+         -webkit-transform: scale(-1, 1);
+         transform: scale(-1, 1);
+         }
+         .fa-flip-vertical {
+         -webkit-transform: scale(1, -1);
+         transform: scale(1, -1);
+         }
+         .fa-flip-both,
+         .fa-flip-horizontal.fa-flip-vertical {
+         -webkit-transform: scale(-1, -1);
+         transform: scale(-1, -1);
+         }
+         .fa-rotate-by {
+         -webkit-transform: rotate(var(--fa-rotate-angle, none));
+         transform: rotate(var(--fa-rotate-angle, none));
+         }
+         .fa-stack {
+         display: inline-block;
+         vertical-align: middle;
+         height: 2em;
+         position: relative;
+         width: 2.5em;
+         }
+         .fa-stack-1x,
+         .fa-stack-2x {
+         bottom: 0;
+         left: 0;
+         margin: auto;
+         position: absolute;
+         right: 0;
+         top: 0;
+         z-index: var(--fa-stack-z-index, auto);
+         }
+         .svg-inline--fa.fa-stack-1x {
+         height: 1em;
+         width: 1.25em;
+         }
+         .svg-inline--fa.fa-stack-2x {
+         height: 2em;
+         width: 2.5em;
+         }
+         .fa-inverse {
+         color: var(--fa-inverse, #fff);
+         }
+         .sr-only,
+         .fa-sr-only {
+         position: absolute;
+         width: 1px;
+         height: 1px;
+         padding: 0;
+         margin: -1px;
+         overflow: hidden;
+         clip: rect(0, 0, 0, 0);
+         white-space: nowrap;
+         border-width: 0;
+         }
+         .sr-only-focusable:not(:focus),
+         .fa-sr-only-focusable:not(:focus) {
+         position: absolute;
+         width: 1px;
+         height: 1px;
+         padding: 0;
+         margin: -1px;
+         overflow: hidden;
+         clip: rect(0, 0, 0, 0);
+         white-space: nowrap;
+         border-width: 0;
+         }
+         .svg-inline--fa .fa-primary {
+         fill: var(--fa-primary-color, currentColor);
+         opacity: var(--fa-primary-opacity, 1);
+         }
+         .svg-inline--fa .fa-secondary {
+         fill: var(--fa-secondary-color, currentColor);
+         opacity: var(--fa-secondary-opacity, 0.4);
+         }
+         .svg-inline--fa.fa-swap-opacity .fa-primary {
+         opacity: var(--fa-secondary-opacity, 0.4);
+         }
+         .svg-inline--fa.fa-swap-opacity .fa-secondary {
+         opacity: var(--fa-primary-opacity, 1);
+         }
+         .svg-inline--fa mask .fa-primary,
+         .svg-inline--fa mask .fa-secondary {
+         fill: black;
+         }
+         .fad.fa-inverse,
+         .fa-duotone.fa-inverse {
+         color: var(--fa-inverse, #fff);
+         }
+      </style>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Farzad Naghshin</title>
+      <script type="module" crossorigin="" src="/assets/index-1c0c14a4.js"></script>
+      <link rel="stylesheet" href="/assets/index-b8d3ba02.css">
+   </head>
+   <body>
+      <div id="root">
+         <div class="bg-base min-h-[100vh] h-[auto] w-full">
+            <div class="bg-level1 h-[88px] flex flex-row fixed w-full z-10">
+               <div class="bg-level1 w-full md:w-[35%] md:bg-base h-[88px]">
+                  <h4 class="text-text text-[32px] font-[900] py-[20px] pl-[20px] md:pl-[72px]">Farzad N.</h4>
+               </div>
+               <div class="bg-level1 w-[65%] h-[88px]  flex-row justify-end hidden md:flex ">
+                  <ul class="flex flex-row justify-between w-[auto]">
+                     <li class="px-[20px] last:bg-primary py-[32px] group hover:bg-primary cursor-pointer"><a class="text-text text-[16px] cursor-pointer" href="#home" title="home">home</a></li>
+                     <li class="px-[20px] last:bg-primary py-[32px] group hover:bg-primary cursor-pointer"><a class="text-text text-[16px] cursor-pointer" href="#portfolio" title="Portfolio">Portfolio</a></li>
+                     <li class="px-[20px] last:bg-primary py-[32px] group hover:bg-primary cursor-pointer"><a class="text-text text-[16px] cursor-pointer" href="#skill" title="Skills">Skills</a></li>
+                     <li class="px-[20px] last:bg-primary py-[32px] group hover:bg-primary cursor-pointer"><a class="text-text text-[16px] cursor-pointer" href="#blog" title="Blog">Blog</a></li>
+                     <li class="px-[20px] last:bg-primary py-[32px] group hover:bg-primary cursor-pointer"><a class="text-text text-[16px] cursor-pointer" href="#contact" title="Contact">Contact</a></li>
+                  </ul>
+               </div>
+               <div class="flex md:hidden relative">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-2xl p-[24px] cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color: rgba(255, 255, 255, 0.867);">
+                     <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
+                  </svg>
+               </div>
+            </div>
+            <div class="h-[88px]"></div>
+            <div class="w-full flex md:flex-row flex-col" id="home">
+               <div class="md:w-[45%] w-full h-[auto] bg-base"><img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=750&amp;h=650&amp;q=80" class="w-[100%] h-[auto]" title="Farzad Naghshin" alt="Farzad Naghshin"></div>
+               <div class="md:flex hidden w-[55%] h-[900px] relative bg-level1 ">
+                  <div class="top-[180px] left-[-80px] pr-[40px] absolute">
+                     <h3 class="text-text text-[76px] leading-[92px] font-[700] ">I’m Farzad Naghshin .<br>A Senior Full Stack Developer<br><span class="text-text opacity-50">Based in Turkey.</span></h3>
+                     <p class="text-text text-[18px] mt-[32px] font-[400] leading-[150%]">I’m probably the most passionate Programmer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
+                  </div>
+               </div>
+               <div class="md:hidden flex w-full h-[auto] bg-level1  py-[48px] px-[20px]">
+                  <div class="flex flex-col">
+                     <h3 class="text-text text-[32px] leading-[38px] font-[700]">I’m Farzad Naghshin .<br>A Senior Full Stack Developer<br><span class="text-text opacity-50">Based in Turkey.</span></h3>
+                     <p class="text-text text-[18px] mt-[16px] font-[400] leading-[27px]">I’m probably the most passionate Programmer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="md:pt-[120px] md:px-[72px] pt-[64px] pb-[64px] px-[20px]" id="portfolio">
+               <label class="text-darkgray text-[16px] font-[700]">WORK EXPERIENCE</label>
+               <h4 class="text-text md:text-[55px] text-[32px] font-[700] mt-[8px]">Companies I have worked<br>for in the past.</h4>
+               <div class="hidden md:grid gap-4 grid-cols-3 mt-[50px]">
+                  <div class="group border-[1px] border-level1 rounded-t-[6px] cursor-pointer relative">
+                     <img src="https://blogapi.fnaghshin.com/uploads/images/1680474353-Screenshot 2023-03-30 at 16.06.26.png" class="cursor-pointer rounded-t-[6px] opacity-100 group-hover:opacity-50">
+                     <div class="invisible group-hover:visible transition-all duration-300 ease-in  bg-[#22222299] absolute top-0 left-0 right-0 bottom-0 flex flex-col px-[10%] py-[15%]">
+                        <h4 class="cursor-pointer text-text text-[32px] font-[700]">Post Title 1</h4>
+                        <label class="cursor-pointer text-text text-[16px] font-[300] mt-[10px]">Post 1 Description</label><button class="cursor-pointer bg-primary text-text py-[20px] w-[100%] text-center absolute bottom-0 left-0 right-0 top-auto">Read More</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="grid md:hidden gap-4 grid-cols-1 mt-[50px]">
+                  <div class="group border-[1px] border-level1 rounded-t-[6px] cursor-pointer relative">
+                     <img src="https://blogapi.fnaghshin.com/uploads/images/1680474353-Screenshot 2023-03-30 at 16.06.26.png" class="cursor-pointer rounded-t-[6px] opacity-100 group-hover:opacity-50">
+                     <div class=" transition-all duration-300 ease-in  bg-[#222222dd] absolute top-[40%] left-0 right-0 bottom-0 flex flex-col px-[5%] py-[5%]">
+                        <h4 class="cursor-pointer text-text text-[24px] font-[700]">Post Title 1</h4>
+                        <label class="cursor-pointer text-text text-[14px] font-[300] mt-[10px]">Post 1 Description</label><button class="cursor-pointer bg-primary text-text py-[10px] w-[100%] text-center absolute bottom-0 left-0 right-0 top-auto">Read More</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-[#000000dd] fixed top-0 left-0 right-0 bottom-0 hidden z-20 flex items-center content-center justify-center">
+               <div class="bg-level1 md:w-[80vw] w-screen md:h-[80vh] h-screen border-level2 border-[1px] rounded-none z-30">
+                  <div class="flex flex-row  border-b-level2 border-b-[1px] w-[100%] justify-between">
+                     <h3 class="text-text text-[18px] py-[12px] px-[20px] text-[500]"></h3>
+                     <div class="h-[52px] w-[52px] bg-pinkaccent text-text text-center text-[32px] cursor-pointer">X</div>
+                  </div>
+                  <div class="md:h-[73vh] h-[96%] overflow-x-hidden overflow-y-visible text-text">
+                     <img class="w-[100%] opacity-100">
+                     <blockquote class="bg-level2 m-2 p-2 leading-6">
+                        <div></div>
+                     </blockquote>
+                     <div class="p-3"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="flex md:flex-row flex-col bg-base py-[12px] md:px-[72px] px-[32px]" id="skill">
+               <div class="flex flex-col md:w-[40%] w-full">
+                  <h2 class="md:text-[55px] text-[38px] text-text leading-[67px] font-[700]">Skills</h2>
+                  <p class="text-lightgray md:text-[18px] text-[14px] leading-[27px] font-[400] my-[24px] mr-[48px] w-full">With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
+               </div>
+               <div class="grid md:grid-cols-3 grid-cols-1 gap-[40px] md:w-[60%] w-full">
+                  <div class="flex flex-col relative p-[10px] bg-level1  hover:bg-level2 cursor-pointer rounded-md">
+                     <img class="w-[48px] h-[48px]" src="https://blogapi.fnaghshin.com/uploads/images/1680476841-php.png"><span class="text-[10px] font-[400] text-primary absolute top-2 right-4 bg-lightgray flex w-[28px] h-[28px] justify-center items-center rounded-full">10 +</span>
+                     <div class="flex flex-col pt-[10px] px-[10px] ">
+                        <label class="text-text text-[24px] font-[700] leading-[29px] mt-[24px]">PHP</label>
+                        <p class="text-lightgray text-[14px] font-[400] leading-[24px] mt-[12px] opacity-70">Description</p>
+                     </div>
+                  </div>
+                  <div class="flex flex-col relative p-[10px] bg-level1  hover:bg-level2 cursor-pointer rounded-md">
+                     <img class="w-[48px] h-[48px]" src="https://blogapi.fnaghshin.com/uploads/images/1680476861-laravel.png"><span class="text-[10px] font-[400] text-primary absolute top-2 right-4 bg-lightgray flex w-[28px] h-[28px] justify-center items-center rounded-full">2 +</span>
+                     <div class="flex flex-col pt-[10px] px-[10px] ">
+                        <label class="text-text text-[24px] font-[700] leading-[29px] mt-[24px]">Laravel</label>
+                        <p class="text-lightgray text-[14px] font-[400] leading-[24px] mt-[12px] opacity-70">Laravel</p>
+                     </div>
+                  </div>
+                  <div class="flex flex-col relative p-[10px] bg-level1  hover:bg-level2 cursor-pointer rounded-md">
+                     <img class="w-[48px] h-[48px]" src="https://blogapi.fnaghshin.com/uploads/images/1680477347-html.png"><span class="text-[10px] font-[400] text-primary absolute top-2 right-4 bg-lightgray flex w-[28px] h-[28px] justify-center items-center rounded-full">1 +</span>
+                     <div class="flex flex-col pt-[10px] px-[10px] ">
+                        <label class="text-text text-[24px] font-[700] leading-[29px] mt-[24px]">HTML &amp; CSS</label>
+                        <p class="text-lightgray text-[14px] font-[400] leading-[24px] mt-[12px] opacity-70">HTML &amp; CSS</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="md:flex hidden flex-row justify-evenly px-[72px] py-[20px]"><img class="grayscale hover:grayscale-0 w-[64px] h-[64px] transform-all cursor-pointer" src="https://blogapi.fnaghshin.com/uploads/images/1680476841-php.png"><img class="grayscale hover:grayscale-0 w-[64px] h-[64px] transform-all cursor-pointer" src="https://blogapi.fnaghshin.com/uploads/images/1680476861-laravel.png"><img class="grayscale hover:grayscale-0 w-[64px] h-[64px] transform-all cursor-pointer" src="https://blogapi.fnaghshin.com/uploads/images/1680477347-html.png"></div>
+            <div class="flex flex-col text-center md:mt-[120px] mt-[60px] md:w-[45%] w-full md:px-[70px] px-[32px] md:pb-[120px] " id="blog">
+               <label class="md:text-[16px] text-[12px] text-[#8491A0] font-[700] w-full text-left">MY Blog Posts</label>
+               <h3 class="text-text font-[700] md:text-[55px] text-[38px] md:leading-[66px] leading-[42px] w-full text-left mt-[48px]">My daily life at work, learning or going out and having fun</h3>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-6 mt-[48px] md:px-[70px] px-[32px]">
+               <div class="  pt-[28px]">
+                  <div class="bg-level1">
+                     <img class="rounded-t-md w-full" src="https://blogapi.fnaghshin.com/uploads/images/1681388628-Laravel resource routes.jpg">
+                     <div class="py-[40px] px-[32px] relative">
+                        <h3 class="text-text text-[48px] leading-[58px]">Laravel resource routes</h3>
+                        <p class="text-[#8491A0] mt-[18px]">Laravel provides a powerful way to define resource routes for common CRUD (Create, Read, Update, Delete) operations.</p>
+                        <label class=" text-lightgray w-full text-right opacity-30 absolute top-4 right-4">Thu 13 April 2023</label>
+                     </div>
+                     <div class="flex flex-row justify-end w-full h-[50px] ">
+                        <div class="text-text bg-primary w-[50px] h-[50px] p-[7px]">
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open-reader" class="svg-inline--fa fa-book-open-reader fa-2xl cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: rgba(255, 255, 255, 0.867);">
+                              <path fill="currentColor" d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"></path>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="md:mt-[-180px]  pt-[28px]">
+                  <div class="bg-level1">
+                     <img class="rounded-t-md w-full" src="https://blogapi.fnaghshin.com/uploads/images/1681385783-Understanding Routes in Laravel.jpg">
+                     <div class="py-[40px] px-[32px] relative">
+                        <h3 class="text-text text-[48px] leading-[58px]">Understanding Routes in Laravel</h3>
+                        <p class="text-[#8491A0] mt-[18px]">One of the core features of Laravel is its routing system, which allows developers to define application routes and handle HTTP requests with ease.</p>
+                        <label class=" text-lightgray w-full text-right opacity-30 absolute top-4 right-4">Thu 13 April 2023</label>
+                     </div>
+                     <div class="flex flex-row justify-end w-full h-[50px] ">
+                        <div class="text-text bg-primary w-[50px] h-[50px] p-[7px]">
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open-reader" class="svg-inline--fa fa-book-open-reader fa-2xl cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: rgba(255, 255, 255, 0.867);">
+                              <path fill="currentColor" d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"></path>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="  pt-[28px]">
+                  <div class="bg-level1">
+                     <img class="rounded-t-md w-full" src="https://blogapi.fnaghshin.com/uploads/images/1681378439-UseEffect.jpg">
+                     <div class="py-[40px] px-[32px] relative">
+                        <h3 class="text-text text-[48px] leading-[58px]">useEffect in React</h3>
+                        <p class="text-[#8491A0] mt-[18px]">useEffect is a hook in React that allows you to handle side effects in functional components. Side effects are anything that happens in your component that affects something outside of it, such as fetching data from an API or updating the title of the page.</p>
+                        <label class=" text-lightgray w-full text-right opacity-30 absolute top-4 right-4">Thu 13 April 2023</label>
+                     </div>
+                     <div class="flex flex-row justify-end w-full h-[50px] ">
+                        <div class="text-text bg-primary w-[50px] h-[50px] p-[7px]">
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open-reader" class="svg-inline--fa fa-book-open-reader fa-2xl cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: rgba(255, 255, 255, 0.867);">
+                              <path fill="currentColor" d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"></path>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="md:mt-[-180px]  pt-[28px]">
+                  <div class="bg-level1">
+                     <img class="rounded-t-md w-full" src="https://blogapi.fnaghshin.com/uploads/images/1681315687-javascript-functions.jpg">
+                     <div class="py-[40px] px-[32px] relative">
+                        <h3 class="text-text text-[48px] leading-[58px]">What is a JavaScript Function</h3>
+                        <p class="text-[#8491A0] mt-[18px]">Functions are a fundamental building block in JavaScript, and they provide a way to encapsulate and reuse code. As a developer, it's important to follow best practices when working with</p>
+                        <label class=" text-lightgray w-full text-right opacity-30 absolute top-4 right-4">Sun 02 April 2023</label>
+                     </div>
+                     <div class="flex flex-row justify-end w-full h-[50px] ">
+                        <div class="text-text bg-primary w-[50px] h-[50px] p-[7px]">
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open-reader" class="svg-inline--fa fa-book-open-reader fa-2xl cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: rgba(255, 255, 255, 0.867);">
+                              <path fill="currentColor" d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"></path>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-[#000000dd] fixed top-0 left-0 right-0 bottom-0 hidden z-20 flex items-center content-center justify-center">
+               <div class="bg-level1 md:w-[80vw] w-screen md:h-[80vh] h-screen border-level2 border-[1px] rounded-none z-30">
+                  <div class="flex flex-row  border-b-level2 border-b-[1px] w-[100%] justify-between">
+                     <h3 class="text-text text-[18px] py-[12px] px-[20px] text-[500]"></h3>
+                     <div class="h-[52px] w-[52px] bg-pinkaccent text-text text-center text-[32px] cursor-pointer">X</div>
+                  </div>
+                  <div class="md:h-[73vh] h-[96%] overflow-x-hidden overflow-y-visible text-text">
+                     <img class="w-[100%] opacity-100">
+                     <blockquote class="bg-level2 m-2 p-2 leading-6">
+                        <div></div>
+                     </blockquote>
+                     <div class="p-3"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="flex md:flex-row flex-col md:py-[120px] py-[40px] md:px-[182px] px-[40px] bg-base" id="contact">
+               <div class="flex flex-col md:w-[50%] w-[100%]">
+                  <h6 class="text-text text-[55px] leading-[68px] font-[700]">Let’s talk business</h6>
+                  <p class="text-lightgray text-[18px] leading-[27px] mt-[24px] font-[400] ">Now that you know a lot about me, let me know if you are interested to work with me.</p>
+               </div>
+               <div class="flex flex-col md:w-[50%] w-[100%]">
+                  <div class="flex flex-col mt-[40px]"><label class="text-text text-[18px] leading-[27px]">Name</label><input class="bg-level1 border-none placeholder:text-lightgray placeholder:opacity-50 text-lightgray h-[50px] w-full p-2" type="text"></div>
+                  <div class="flex flex-col mt-[40px]"><label class="text-text text-[18px] leading-[27px]">E-Mail</label><input class="bg-level1 border-none placeholder:text-lightgray placeholder:opacity-50 text-lightgray h-[50px] w-full p-2" type="email"></div>
+                  <div class="flex flex-col mt-[40px]"><label class="text-text text-[18px] leading-[27px]">E-Mail</label><textarea class="bg-level1 border-none placeholder:text-lightgray placeholder:opacity-50 text-lightgray h-[200px] w-full p-2" type="text"></textarea></div>
+                  <div class="flex flex-col mt-[40px]"><button class="flex bg-primary text-text h-[50px] w-full items-center justify-center">Send Message</button></div>
+               </div>
+            </div>
+            <div class="bg-level1 flex flex-col w-full">
+               <div class="bg-level1 flex md:flex-row flex-col w-full h-auto pb-[80px] pt-[40px]">
+                  <div class="flex flex-col w-full md:w-[60%]">
+                     <h4 class="text-text text-[32px] font-[900]  pl-[20px] md:pl-[72px]">Farzad N.</h4>
+                     <ul class="flex flex-row pl-[20px] md:pl-[72px] mt-[10px]">
+                        <li>
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code fa-md cursor-pointer pr-[16px] text-text hover:text-primary" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                              <path fill="currentColor" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path>
+                           </svg>
+                        </li>
+                        <li>
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-pin" class="svg-inline--fa fa-location-pin fa-md cursor-pointer pr-[16px] text-text hover:text-primary" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                              <path fill="currentColor" d="M384 192c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0C117 435 0 279.4 0 192C0 86 86 0 192 0S384 86 384 192z"></path>
+                           </svg>
+                        </li>
+                        <li>
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fish-fins" class="svg-inline--fa fa-fish-fins fa-md cursor-pointer pr-[16px] text-text hover:text-primary" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                              <path fill="currentColor" d="M275.2 38.4c-10.6-8-25-8.5-36.3-1.5S222 57.3 224.6 70.3l9.7 48.6c-19.4 9-36.9 19.9-52.4 31.5c-15.3 11.5-29 23.9-40.7 36.3L48.1 132.4c-12.5-7.3-28.4-5.3-38.7 4.9S-3 163.3 4.2 175.9L50 256 4.2 336.1c-7.2 12.6-5 28.4 5.3 38.6s26.1 12.2 38.7 4.9l93.1-54.3c11.8 12.3 25.4 24.8 40.7 36.3c15.5 11.6 33 22.5 52.4 31.5l-9.7 48.6c-2.6 13 3.1 26.3 14.3 33.3s25.6 6.5 36.3-1.5l77.6-58.2c54.9-4 101.5-27 137.2-53.8c39.2-29.4 67.2-64.7 81.6-89.5c5.8-9.9 5.8-22.2 0-32.1c-14.4-24.8-42.5-60.1-81.6-89.5c-35.8-26.8-82.3-49.8-137.2-53.8L275.2 38.4zM384 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path>
+                           </svg>
+                        </li>
+                        <li>
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="helmet-safety" class="svg-inline--fa fa-helmet-safety fa-md cursor-pointer pr-[16px] text-text hover:text-primary" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                              <path fill="currentColor" d="M256 32c-17.7 0-32 14.3-32 32v2.3 99.6c0 5.6-4.5 10.1-10.1 10.1c-3.6 0-7-1.9-8.8-5.1L157.1 87C83 123.5 32 199.8 32 288v64H544l0-66.4c-.9-87.2-51.7-162.4-125.1-198.6l-48 83.9c-1.8 3.2-5.2 5.1-8.8 5.1c-5.6 0-10.1-4.5-10.1-10.1V66.3 64c0-17.7-14.3-32-32-32H256zM16.6 384C7.4 384 0 391.4 0 400.6c0 4.7 2 9.2 5.8 11.9C27.5 428.4 111.8 480 288 480s260.5-51.6 282.2-67.5c3.8-2.8 5.8-7.2 5.8-11.9c0-9.2-7.4-16.6-16.6-16.6H16.6z"></path>
+                           </svg>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="flex w-full md:w-[40%] md:px-0 px-[24px] md:mt-0 mt-4">
+                     <ul class="flex flex-col text-text text-[18px]">
+                        <li>Farzad Naghshin</li>
+                        <li>Full Stack Developer</li>
+                        <li>naghshin.farzad@gmail.com</li>
+                        <li>+905384344051</li>
+                        <li>Turkey / Istanbul</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="flex w-full text-level2 md:px-[72px] px-[20px]">no Copyright • Farzad Naghshin</div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

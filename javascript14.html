@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var body = document.getElementsByTagName('body')[0]
+    // var newDiv = document.createElement('div')
+    // var beforeLable = document.createElement('lable');
+    // var afterLable = document.createElement('lable');
+    // newDiv.innerText = 'Salam'
+    // newDiv.style.backgroundColor = 'green'
+    // newDiv.style.borderColor = 'red'
+    // newDiv.style.borderStyle = 'solid'
+    // newDiv.style.borderWidth = '1px'
+    
+    // body.append(newDiv)
+
+    // beforeLable.innerText = 'before'
+    // afterLable.innerText = 'after'
+    // newDiv.before(beforeLable)
+    // newDiv.after(afterLable)
+    // newDiv.remove()
+
+    for(var i = 0; i<=9;i++)
+    {
+        var image = document.createElement('img');
+        image.style.borderRadius = '100%'
+        image.style.margin = '4px'
+        image.src = 'https://picsum.photos/100/100?random='+i
+
+        body.append(image)
+    }
+
+</script>
+</html>

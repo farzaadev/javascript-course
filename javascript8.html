@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="sample_form">
+        <input type="text">
+        <br />
+        <input type="number">
+        <br>
+        <input type="color">
+        <br>
+        <input type="datetime">
+        <button type="button" onclick="logAll()">
+            Log All
+        </button>
+    </form>
+    <script>
+        function logAll(){
+            var sform = document.getElementById('sample_form');
+            var inputs = sform.getElementsByTagName('input');
+            
+            for(var input of inputs)
+            {
+                console.log(input.value)
+            }
+
+            // for(var input_key in inputs)
+            // {
+            //     console.log(inputs[input_key])
+            // }
+
+            // for(var row = 0 ; row < inputs.length ; row++)
+            // {
+            //     console.log(inputs[row])
+            // }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mashin hesab</title>
+</head>
+<body>
+    <input type="tel" id="num1"/>
+
+    <br>
+
+    <input id="num2" type="tel">
+
+    <br>
+    <br>
+
+    <button type="button" onclick="result('+')">+</button>
+    <button type="button" onclick="result('-')">-</button>
+    <button type="button" onclick="result('*')">*</button>
+    <button type="button" onclick="result('/')">/</button>
+
+    <div id="result">
+        0
+    </div>
+
+    <script>
+        var result1 = document.getElementById('result')
+        
+
+        function result(action)
+        {
+            number1 = parseInt(document.getElementById('num1').value)
+            number2 = parseInt(document.getElementById('num2').value)
+            if(action == '+')
+                result1.innerText = number1 + number2
+            if(action == '-')
+                result1.innerText = number1 - number2
+            if(action == '*')
+                result1.innerText = number1 * number2
+            if(action == '/')
+                result1.innerText = number1 / number2
+        }
+    </script>
+</body>
+</html>

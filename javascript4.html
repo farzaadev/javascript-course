@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button 
+    onclick="changeNumber(1)"
+    type="button">
+        +
+    </button>
+    <label id="shownumber">
+        0
+    </label>
+    <button 
+    onclick="changeNumber(-1)"
+    type="button">
+        -
+    </button>
+    <script>
+        var number = 0
+        var shownumber = document.getElementById('shownumber')
+
+        function changeNumber(step){
+            
+
+            // < if(9 < 10)
+            // > if(10 > 9)
+            // == if(10 == 10)
+            // <= if(10 <= 10)
+            // >= if(10 >= 10)
+            // != if(9 != 10)
+
+            // ===
+            // !==
+
+            if(number + step <= 9 && number + step >= 0)
+            {
+                number = number + step
+                shownumber.innerText = number
+            }
+        }
+
+        // if(9 !== '9')
+        //     console.log('10 === 10')
+        // if(9 != '9')
+        //     console.log('10 == 10')
+
+        // if(number > 0){
+        //     //// true
+        // }else{
+        //     //// false
+        // }
+
+        // if(number > 0)
+        // {
+
+        // }else if(number < 10){
+
+        // }else if(number < 10){
+
+        // }else if(number < 10){
+        // }else if(number < 10){
+        // }else if(number < 10){
+        // }else if(number < 10){
+        // }else if(number < 10){
+        // }else if(number < 10){
+        // }else if(number < 10){
+        // }else if(number < 10){
+
+
+        // }else{
+
+        // }
+    </script>
+</body>
+</html>
